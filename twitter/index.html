@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Twitter
+    </title>
+    <!--Uniendo con el css que dará los estilos del html-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Link para poner los iconos al html-->
+    <link rel="stylesheet" href="assets/fonts/style.css">
+  </head>
+  <body>
+    <nav>
+      <!--Poniendo las opciones del menu navegador-->
+      <ul>
+        <li> <span class="icon-home2"></span>Inicio</li>
+        <li><span class="icon-power"></span>Momentos</li>
+        <li><span class="icon-bell"></span>Notificaciones</li>
+        <li><span class="icon-envelop"></span>Mensajes</li>
+      </ul>
+      <span id="icon" class="icon-twitter"></span>
+      <form class="search display"  method="post">
+        <input type="text" placeholder="Buscar en twitter" class="buscador ">
+      </form>
+      <button type="submit" name="Twittear" class="button-twitter">Twittear</button>
+      <span><img  src="assets/images/user.png" alt="user" class="user"></span>
+    </nav>
+    <section class="conteiner clear display">
+      <section class="contenedor" id="generador-tweet">
+        <form class="twittear">
+          <textarea name="tweet" rows="8" cols="80" id="tweet" maxlength="280"></textarea>
+          <input type="submit" name="Twitter" value="Twittear" id="twittear">
+        </form>
+      </section>
+  </section> <!--cierre de coniteiner-->
+  <!--Vinculo con el javascript-->
+  <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

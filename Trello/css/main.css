@@ -1,0 +1,58 @@
+
+
+*{
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+/*
+
+    font-family: 'Nunito Sans', sans-serif;
+
+    font-family: 'Pacifico', cursive;
+
+*/
+/* Azul clarito #66A4C8
+  Azul normal #0079BF
+*/
+body {
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+nav{
+background-color: #026aa7;
+color:white;
+height: 60px;
+width: 100%;
+}
+nav>form>input {
+  background-color: #66A4C8;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+}
+
+header{
+  background-color: #0079BF;
+  color:white;
+  height: 40px;
+  width:100%;
+}
+header>ul>li {
+  display:inline-block;
+}
+
+/* CLASES*/
+.logo {
+  display: inline-block;
+  margin: auto;
+}
+.logos>span {
+  height: 30px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 32px;
+}
+/*ID*/

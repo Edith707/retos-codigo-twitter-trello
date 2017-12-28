@@ -1,0 +1,121 @@
+/* ETIQUETAS DEL HTML*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #E6ECF0;
+  font-family: sans-serif, Arial;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*color #1DA1F2* azulito */
+
+nav {
+  background-color: white;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
+nav>ul>li{
+  display: inline-block;
+  color: #66757f;
+  font-size: 16px;
+  font-weight: bold;
+  list-style: none;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  vertical-align: super;
+}
+nav>ul>li:hover {
+  color:#1DA1F2;
+  text-decoration: underline;
+}
+
+nav>span>img {
+  border-radius: 20px;
+  display: inline-block;
+  height: 32px;
+  weight: 32px;
+}
+nav>ul{
+  display: inline-block;
+}
+
+
+/* CLASES*/
+
+.buscador{
+  background-color: #E6ECF0;
+  border: 0px;
+  border-radius: 15px;
+  float: right;
+  margin-top:10px;
+  margin-left: 280px;
+  height: 32px;
+  width: 221px;
+}
+.button-twitter {
+  background-color: #1DA1F2;
+  border: 0;
+  border-radius: 15px;
+  color: white;
+  font-weight: bolder;
+  float:right;
+  margin: 7px 40px;
+  height: 35px;
+  width: 84px;
+}
+.button-twitter:hover {
+  background-color: #B7E0FC;
+}
+.user {
+  float: right;
+  margin:7px 10px;
+}
+.float-rigth {
+  float: right;
+}
+.conteiner {
+  background-color:#E8F5FD;
+  height: 150px;
+  margin-top: 70px;
+  margin-left: 25%;
+  width: 50%;
+}
+.twittear>textarea {
+  border:none;
+  border-radius: 10px;
+  height: 80px;
+  resize: none;
+  width: 506px;
+}
+
+.twittear> input {
+  background-color: #B7E0FC;
+  border: 0;
+  border-radius: 15px;
+  color: white;
+  font-weight: bolder;
+  float:right;
+  margin: 7px 40px;
+  height: 35px;
+  width: 84px;
+}
+.twittear> input:hover{
+  background-color:#1DA1F2; }
+.clear {
+  clear: both;
+}
+.display {
+  display: inline-block;
+}
+
+/*ID*/
+#icon {
+  color: #1DA1F2;
+  font-size: 2em;
+  display: inline-block;
+  margin-left: 8%;
+}
