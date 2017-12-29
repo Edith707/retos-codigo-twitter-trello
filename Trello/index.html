@@ -13,21 +13,23 @@
   <body>
     <nav>
       <form class="form" action="index.html" method="post">
-        <input type="text" name="search" placeholder=" Tableros">
-        <input type="text" name="search" placeholder= "&#xe986;">
+        <input class="display" type="text" name="search" placeholder=" Tableros">
+        <input class="display" type="text" name="search" placeholder= "Buscar algo...">
       </form>
-      <div class="logo">
-        <span class="icon-trello"></span>
-        <p>Trello</p>
+
+      <!--<div class="logo">
+        <span class=" icon-trello"></span>
+        <p >Trello</p>
       </div>
+    -->
       <div class="logos">
-        <span class="icon-plus"></span>
-        <i class="fa fa-info-circle" aria-hidden="true"></i>
-        <span class="icon-bell"></span>
-        <span class="icon-user"></span>
+        <span class="icon-plus display float-rigth"></span>
+        <i class="fa fa-info-circle display float-rigth" aria-hidden="true"></i>
+        <span class="icon-bell display float-rigth"></span>
+        <span class="icon-user display float-rigth"></span>
       </div>
     </nav>
-    <header>
+    <header class="clear">
       <ul>
         <li>Cómo utilizar Trello para android</li>
         <span class="icon-star-empty"></span>
@@ -35,8 +37,21 @@
         <span class="icon-lock"></span>
         <li>Privado</li>
       </ul>
-        <span>...Mostrar Menú</span>
+        <span class="menu">...Mostrar Menú</span>
     </header>
+    </section> <!--cierre de conteiner-->
+      <section class="container-2  ">
+        <div class="tasks" id="tasks">
+
+        </div>
+        <section class="textarea-lista display float-rigth">
+          <form class="añadir lista">
+            <textarea id="list" name="" rows="8" cols="80" maxlength="280"placeholder="Añadir una  lista..."></textarea>
+            <input id="save" type="submit" value="Guardar">
+          </form>
+        </section>
+      </section>
+
     <!--Usando un src para unir el html con javascript-->
     <script type="text/javascript" src="javascript/app.js"></script>
   </body>

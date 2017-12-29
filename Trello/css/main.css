@@ -1,58 +1,131 @@
-
-
 *{
    border: 0;
    padding: 0;
    margin: 0;
 }
 
-/*
-
-    font-family: 'Nunito Sans', sans-serif;
-
-    font-family: 'Pacifico', cursive;
-
-*/
+/*  font-family: 'Nunito Sans', sans-serif;  font-family: 'Pacifico', cursive;*/
 /* Azul clarito #66A4C8
   Azul normal #0079BF
 */
 body {
+  background-color: #0079BF;
   font-family: helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 700;
+
+  /*font-weight: 700;*/
 }
+/* colores
+ #026aa7
+ #66A4C8
+ #0079BF
+ */
 nav{
-background-color: #026aa7;
-color:white;
-height: 60px;
-width: 100%;
-}
-nav>form>input {
-  background-color: #66A4C8;
+  background-color: #0067A3;
   color: white;
-  display: inline-block;
-  font-weight: bold;
+  height: 50px;
+  position: fixed;
+  width: 100%;
 }
 
-header{
-  background-color: #0079BF;
-  color:white;
-  height: 40px;
-  width:100%;
+header, .conteiner {
+  background-color:#0079BF;
+  color: white;
+  width: 100%;
 }
-header>ul>li {
-  display:inline-block;
+header>ul {
+  display: inline-block;
+}
+ header>ul>li {
+   display: inline-block;
+   margin-top: 70px;
+   margin-left: 15px;
+ }
+
+ header>ul>span {
+   margin-left: 15px;
+ }
+nav>form>input{
+  background-color: #66A4C8;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  margin: 10px 20px;
+  width: 180px;
 }
 
 /* CLASES*/
-.logo {
+.logo>p {
   display: inline-block;
-  margin: auto;
+  font-family: 'Pacifico';
+  font-size: 2em;
 }
-.logos>span {
+.logos>span{
+  background-color: #66A4C8;
+  border-radius: 5px;
   height: 30px;
-  display: inline-block;
-  vertical-align: baseline;
+  margin-right: 15px;
+  margin-top: -35px;
+  text-align: center;
+  padding: 3px;
   width: 32px;
+}
+.display {
+  display: inline-block;
+}
+.container{
+  margin-top:30px;
+  width:100%;
+}
+.float-rigth{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+.menu {
+  margin-left:30%;
+}
+.añadir-lista  {
+  background-color: #E2E4E6;
+  display: inline-block;
+  width: 270px;
+}
+.container-2 {
+  display float-rigth
+  height: 150px;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.textarea-lista {
+  background-color: #E2E4E6;
+  border-radius: 10px;
+  height: 150px;
+  margin-top: 30px;
+  width: 262px;
+}
+.textarea-lista>form>textarea {
+  background-color: #D7D8DA;
+  border-radius: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+  height: 32px;
+  margin-top: 20px;
+  width: 262px;
+}
+.textarea-lista>form>input {
+  background-color: #519839;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  height: 35px;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 90px;
 }
 /*ID*/
