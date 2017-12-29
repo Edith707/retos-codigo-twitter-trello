@@ -23,7 +23,7 @@ var createElements = function(event) {
   addCard.id = account;//creando un id al link que agregará la tarjeta
   addCard.innerText = 'Agregar una tarjeta';//creando un texto al link
   addCard.className = ('buttonCard');//crenado una clase para el link
-  addCard.addEventListener('click', board);/* FAlta definir board Agregando evento a board */
+  addCard.addEventListener('click',addList );/* FAlta definir addList Agregando evento a addList */
   /*Agregando atributos al section*/
   section.appendChild(label);
   section.appendChild(a);
@@ -35,12 +35,36 @@ var createElements = function(event) {
   list.placeholder = "Añadir lista";//después de limpiarlo, se le agregará este placeholder
 };
 
-var board = fuction (event) {};
+var board = function (event) {
+  var thisId = this.id; /* Variable del Id al que se hará referencia*/
+  event.preventDefault();
+  var addBoard = document.createElement("div"); /*creando el elemento que contendra la nueva tarjeta*/
+  var newText = document.getElementById('textAdd' + position); /*Llamando al textarea y su posición*/
+  addBoard.textContent = newText.value; /* Añadiendo el texto a la nueva tarjeta*/
+  document.getElementsByTagName('div')[position].appendChild(addBoard); //agregando al formulario el article contenedor de todo aumentando con position su id también
+  newText.value=""; /*Limpiando el espacio del textarea*/
+};
+
+var addList = function(event) {
+  var thisId = this.id; /* Variable del Id al que se hará referencia*/
+  position = thisId;
+  event.preventDefault();
+  var createTextarea = createElement("textarea"); /* creando el elemento Textarea*/
+  createTextarea.id= "textAdd" + thisId;
+  var buttonNew = createElement("button"); /*Creando un nuevo botton*/
+  buttonNew.innerText = 'Añadir'; //agregándole texto al botón
+  buttonNew.id = 'btnAdd' + elId; // creandole id al boton
+  buttonNew.className = "buttonTask" // creandole clase al boton
+  buttonNew.addEventListener('click', board); /* Agregar un evento  click, ejecutar la funcion board*/
+  document.getElementsByTagName('section')[thisId].appendChild(createTextArea); //agregándole el textarea al article por su id
+  document.getElementsByTagName('section')[thisId].appendChild(buttonNew); //agregándole el boton al article por su id
+};
+
 
 /*Función que agrega el evento*/
 var addEvent = function(event){
-  event.preventDefault();
-  createElements(e);
+
+  createElements(event);
 };
 
 buttonAction.addEventListener("click", addEvent);
