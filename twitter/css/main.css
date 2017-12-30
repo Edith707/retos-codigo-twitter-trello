@@ -78,7 +78,8 @@ nav>ul{
   float: right;
 }
 .conteiner {
-  background-color:#E8F5FD;
+  background-color: red;
+  /*background-color:#E8F5FD;*/
   height: 150px;
   margin-top: 70px;
   margin-left: 25%;
@@ -113,12 +114,11 @@ nav>ul{
 }
 .tweet {
   background-color: green;
+  margin-top: 200px;
 }
 /*ID*/
-#conteiner_tweets div {
+#conteiner_tweets  {
   background-color: pink;
-
-
 }
 #icon {
   color: #1DA1F2;

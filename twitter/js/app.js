@@ -11,15 +11,16 @@ var addTweet = function (event) {
   var text = textArea.value;
   //Creando nuevos elementos
    var tweet = document.createElement("div");//div
+    tweet.className ="tweet";//dando clase al div
    var conteinerTweet = document.createElement("p");//p
    var conteinerHour = document.createElement("span");//span
    var conteinerText =  document.createTextNode(text);//node text
-
-  
-
-
-
-
+  //Agregar los nuevos elementos al html
+  conteinerTweet.appendChild(conteinerText);
+  tweet.appendChild(conteinerTweet);
+  tweet.appendChild(conteinerHour);
+  conteinerTweets.appendChild(tweet);
+ console.log(tweet);
 
 };
 
