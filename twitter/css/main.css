@@ -11,7 +11,7 @@ body{
 }
 
 /*color #1DA1F2* azulito */
-
+/*Atributos pare el Navegador */
 nav {
   background-color: white;
   height: 50px;
@@ -43,6 +43,22 @@ nav>ul{
   display: inline-block;
 }
 
+/*ID*/
+/*Atributos para el contenedor de los nuevos tweets generados*/
+#conteiner_tweets  {
+  background-color:#E8F5FD;
+  min-height: 150px;
+  margin-top: 70px;
+  margin-left: 25%;
+  width: 50%;
+}
+#icon {
+  color: #1DA1F2;
+  font-size: 2em;
+  display: inline-block;
+  margin-left: 8%;
+}
+
 
 /* CLASES*/
 
@@ -52,7 +68,7 @@ nav>ul{
   border-radius: 15px;
   float: right;
   margin-top:10px;
-  margin-left: 280px;
+  margin-left: 50%;
   height: 32px;
   width: 221px;
 }
@@ -63,7 +79,8 @@ nav>ul{
   color: white;
   font-weight: bolder;
   float:right;
-  margin: 7px 40px;
+  margin-top: 10px;
+  margin-right: 3%;
   height: 35px;
   width: 84px;
 }
@@ -72,14 +89,14 @@ nav>ul{
 }
 .user {
   float: right;
-  margin:7px 10px;
+  margin-top: 10px;
+  margin-left: 2%;
+
 }
-.float-rigth {
-  float: right;
-}
+
+
 .conteiner {
-  background-color: red;
-  /*background-color:#E8F5FD;*/
+  background-color:#E8F5FD;
   height: 150px;
   margin-top: 70px;
   margin-left: 25%;
@@ -106,23 +123,30 @@ nav>ul{
 }
 .twittear> input:hover{
   background-color:#1DA1F2; }
+
+ /*CLase que tendra los Tweets en teoria cuando sean creados*/
+.tweet {
+  border:none;
+  border-radius: 10px;
+  height: 80px;
+  resize: none;
+  width: 506px;
+}
+.tweet p {
+  border:none;
+  border-radius: 10px;
+  height: 80px;
+  resize: none;
+  width: 506px;
+}
+
 .clear {
   clear: both;
 }
 .display {
   display: inline-block;
 }
-.tweet {
-  background-color: green;
-  margin-top: 200px;
-}
-/*ID*/
-#conteiner_tweets  {
-  background-color: pink;
-}
-#icon {
-  color: #1DA1F2;
-  font-size: 2em;
-  display: inline-block;
-  margin-left: 8%;
+/*Clases con atributos para no repetir codigo*/
+.float-rigth {
+  float: right;
 }
