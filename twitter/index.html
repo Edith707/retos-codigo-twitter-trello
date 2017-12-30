@@ -25,10 +25,16 @@
       <button type="submit" name="Twittear" class="button-twitter">Twittear</button>
       <span><img  src="assets/images/user.png" alt="user" class="user"></span>
     </nav>
+
+    <!-- Seccion que contiene los emenetos que generaran los tweets-->
     <section class="conteiner clear display">
+      <section  id="conteiner_tweets"> <!--contenedor de nuevos tweets-->
+
+      </section>
       <section class="contenedor" id="generador-tweet">
+        <p id="account">140</p>
         <form class="twittear">
-          <textarea name="tweet" rows="8" cols="80" id="tweet" maxlength="280"></textarea>
+          <textarea name="tweet" rows="8" cols="80" id="tweet" maxlength="280" value=""></textarea>
           <input type="submit" name="Twitter" value="Twittear" id="twittear">
         </form>
       </section>

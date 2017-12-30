@@ -111,8 +111,15 @@ nav>ul{
 .display {
   display: inline-block;
 }
-
+.tweet {
+  background-color: green;
+}
 /*ID*/
+#conteiner_tweets div {
+  background-color: pink;
+
+
+}
 #icon {
   color: #1DA1F2;
   font-size: 2em;
