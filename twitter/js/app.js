@@ -1,10 +1,10 @@
 //trayendo elementos del HTML
-var account= document.getElementById("account");
+var account= document.getElementById("account"); // p donde se muestra el contador de caracteres
 var textArea = document.getElementById("tweet");//textArea
 var button = document.getElementById("twittear"); //button tweet
 
-//Funcion para generar la variable tiempo
-var time = function (event){
+var addTweet = function (event) {
+  /* Este codigo es para poder obtener la hora del tweet*/
   var toDay = new Date();
   var hour = toDay.getHours();
   var min = toDay.getMinutes();
@@ -26,11 +26,8 @@ var time = function (event){
   };
 
  var timeNow =hour + ":" + min+ ampm;
-  console.log(timeNow);
-  return timeNow;
-}
 
-var addTweet = function (event, timeNow) {
+
   //Taer las tags necesarias para la funcion
   var textArea = document.getElementById("tweet");//textArea
   var button = document.getElementById("twittear"); //button tweet
@@ -44,14 +41,14 @@ var addTweet = function (event, timeNow) {
    var conteinerHour = document.createElement("span");//span
   var nodoText  = document.createTextNode(text);//node text
   var time = document.createTextNode(timeNow);
-
-
-  /*//Agregar los nuevos elementos al html
-   conteinerHour.appendChild(time);
-   conteinerTweet.appendChild(nodoText);
-   tweet.appendChild(conteinerTweet);
-   tweet.appendChild(conteinerHour);
-   conteinerNew.appendChild(tweet);*/
+ //Agregando elementos HTML
+ conteinerTweet.appendChild(nodoText); //Agregando nodo de texto a p
+ conteinerHour.appendChild(time); // Agregando el nodo time a span
+ tweet.appendChild(conteinerTweet); // Agregando p al div
+ tweet.appendChild(conteinerHour); // Agregando span al div
+conteinerNew.appendChild(tweet);  //Agregando div al conteiner del html
+ /* Hasta aqui tengo conflicto con el codigo se muestra por segundos en la pagina pero no se
+ imprime*/
 };
 
 var accountLetters = function (event) {
@@ -85,7 +82,6 @@ var inner = function (event){
   textArea.value = "";
 };
 //Agregando eventos a las variables
-button.addEventListener("click", time); //Agregando evento al button twitter y ejecutar la función time
 button.addEventListener("click", addTweet); //Agregando evento al button twitter y ejecutar la función addTweet
 textArea.addEventListener("keyup", accountLetters); //Agregando evento al button twitter y ejecutar la función contador de letras
 window.addEventListener("load", inner); // Agregando evento al cargar la página

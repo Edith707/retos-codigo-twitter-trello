@@ -28,11 +28,12 @@ nav>ul>li{
   margin-left: 20px;
   vertical-align: super;
 }
+/*Estilos de la lista del navegador*/
 nav>ul>li:hover {
   color:#1DA1F2;
   text-decoration: underline;
 }
-
+/* estilo de los logos del nav*/
 nav>span>img {
   border-radius: 20px;
   display: inline-block;
@@ -60,7 +61,7 @@ nav>ul{
 
 
 /* CLASES*/
-
+/*Estilos del buscador de twitter aunque no tiene funcion*/
 .buscador{
   background-color: #E6ECF0;
   border: 0px;
@@ -86,22 +87,22 @@ nav>ul{
 .button-twitter:hover {
   background-color: #B7E0FC;
 }
+/*clase imagen del usuario*/
 .user {
   float: right;
   margin-top: 10px;
   margin-left: 2%;
 
 }
-
-
+/*contenedor general*/
 .conteiner{
-  background-color: blue;
  background-color:#E8F5FD;
   height: 150px;
   margin-top: 70px;
   margin-left: 25%;
   width: 50%;
 }
+/*clase del textarea que escribe el tweet*/
 .twittear>textarea {
   border:none;
   border-radius: 10px;
@@ -109,7 +110,7 @@ nav>ul{
   resize: none;
   width: 506px;
 }
-
+/*clase del button que escribe el tweet*/
 .twittear> input {
   background-color: #B7E0FC;
   border: 0;
@@ -127,29 +128,29 @@ nav>ul{
 
  /*CLase que tendra los Tweets en teoria cuando sean creados*/
 .tweet {
-  background-color: green;
+  background-color: #B7E0FC;
   border:none;
   border-radius: 10px;
   height: 80px;
   resize: none;
   width: 400px;
 }
+/*clase del elemento p*/
 .tweet2 {
-  background-color: pink;
+  background-color: white;
   border:none;
   border-radius: 10px;
   height: 80px;
   resize: none;
   width: 400px;
 }
-
+/*Clases con atributos para no repetir codigo*/
 .clear {
   clear: both;
 }
 .display {
   display: inline-block;
 }
-/*Clases con atributos para no repetir codigo*/
 .float-rigth {
   float: right;
 }
