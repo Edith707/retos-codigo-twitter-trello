@@ -46,11 +46,10 @@ nav>ul{
 /*ID*/
 /*Atributos para el contenedor de los nuevos tweets generados*/
 #conteiner_tweets  {
-  background-color:#E8F5FD;
+ background-color:#E8F5FD;
   min-height: 150px;
   margin-top: 70px;
-  margin-left: 25%;
-  width: 50%;
+  width: 100%;
 }
 #icon {
   color: #1DA1F2;
@@ -95,8 +94,9 @@ nav>ul{
 }
 
 
-.conteiner {
-  background-color:#E8F5FD;
+.conteiner{
+  background-color: blue;
+ background-color:#E8F5FD;
   height: 150px;
   margin-top: 70px;
   margin-left: 25%;
@@ -124,20 +124,23 @@ nav>ul{
 .twittear> input:hover{
   background-color:#1DA1F2; }
 
+
  /*CLase que tendra los Tweets en teoria cuando sean creados*/
 .tweet {
+  background-color: green;
   border:none;
   border-radius: 10px;
   height: 80px;
   resize: none;
-  width: 506px;
+  width: 400px;
 }
-.tweet p {
+.tweet2 {
+  background-color: pink;
   border:none;
   border-radius: 10px;
   height: 80px;
   resize: none;
-  width: 506px;
+  width: 400px;
 }
 
 .clear {
