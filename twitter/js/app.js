@@ -47,7 +47,7 @@ var addTweet = function (event) {
  tweet.appendChild(conteinerTweet); // Agregando p al div
  tweet.appendChild(conteinerHour); // Agregando span al div
 conteinerNew.appendChild(tweet);  //Agregando div al conteiner del html
- /* Hasta aqui tengo conflicto con el codigo se muestra por segundos en la pagina pero no se
+ /* Hasta aqui tengo conflicto con el código se muestra por segundos en la página pero no se
  imprime*/
 };
 
