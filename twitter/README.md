@@ -29,4 +29,4 @@
 
      1. Agregar la hora en que se publicó el tweet. En el formato de 24 horas: hh:mm.
 
-![Diagrama de flujo](../assets/Twitter.jpeg)
+![Diagrama de flujo](assets/Twitter.jpeg)

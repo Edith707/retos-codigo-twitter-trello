@@ -37,7 +37,8 @@ var createElements = function(event) {
 
    var id = "check" + account; //agregar un id contador
 
-   label.setAttribute("for", id) //dandole un atributo a label
+   
+  label.setAttribute("for", id) //dandole un atributo a label
   label.textContent = text;
 
 
