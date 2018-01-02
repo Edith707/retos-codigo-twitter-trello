@@ -56,6 +56,9 @@ nav>form>input{
 }
 
 /* CLASES*/
+
+
+
 .logo>p {
   display: inline-block;
   font-family: 'Pacifico';
@@ -93,18 +96,41 @@ nav>form>input{
   width: 270px;
 }
 .container-2 {
-  display float-rigth
+
   height: 150px;
   margin-right: 20px;
   width: 100%;
 }
 
+.agregar {
+background-color: #66A4C8;
+border-radius: 10px;
+color: white;
+float: right;
+font-family: 'Nunito Sans', sans-serif;
+height: 30px;
+margin-top: 10px;
+margin-right: 15px;
+resize:none;
+width: 262px;
+}
+
+.section{
+  background-color: pink;
+  border-radius: 10px;
+  display: none;
+  height: 150px;
+  margin-top: 80px;
+  width: 262px;
+};
 .textarea-lista {
   background-color: #E2E4E6;
   border-radius: 10px;
+  display: none;
   height: 150px;
-  margin-top: 30px;
+  margin-top: 80px;
   width: 262px;
+
 }
 .textarea-lista>form>textarea {
   background-color: #D7D8DA;
@@ -125,7 +151,20 @@ nav>form>input{
   font-size: 16px;
   height: 35px;
   margin-left: 5px;
-  margin-top: 5px;
+  margin-top: 0px;
   width: 90px;
 }
 /*ID*/
+#section {
+  background-color: rgba(0, 0, 0, .05);
+  border-radius: 5px;
+  border-color: #aaa;
+  display: block;isplay: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding-left: 5px;
+  width: 240px
+  
+}
