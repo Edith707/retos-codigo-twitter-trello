@@ -26,4 +26,4 @@
 
   +  Poder agregar múltiples listas con tarjetas. Para esto, el formulario de "Añadir una lista" debe aparecer a la derecha de la lista anteriormente creada.
 
-![Diagrama de Flujo](file:///C:/Users/Corei3/Documents/laboratoria-proyectos/sprint2/retos-de-codigo/Trello/assets/images/Trello.jpeg)
+![Diagrama de Flujo](../assets/images/Trello.jpeg)
